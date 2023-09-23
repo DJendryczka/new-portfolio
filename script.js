@@ -27,3 +27,6 @@ function hideLoadingPage() {
   document.getElementById("loading-page").classList.add("none");
   document.getElementById("welcome-page").classList.toggle("flex");
 }
+
+
+

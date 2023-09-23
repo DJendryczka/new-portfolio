@@ -6,15 +6,27 @@ html{
     margin: 0;
     box-sizing: border-box;
 }
+h1{
+    font-size: 3rem; 
+    padding-bottom: 1.5rem; 
+}
 h3{
     text-align: center;
     padding: 1rem 0;
     font-size: 2.3rem;
     letter-spacing: 8px;
 }
+img{
+    display: block;
+}
+.my-image{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
 .loading-page{
-    background-color: rgb(14, 40, 91);
-    color: rgb(182, 232, 236);
+    background-color: #4400FF;
+    color: #9C92F8;
     font-weight: 900;
     height: 100vh;
 }
@@ -24,31 +36,20 @@ h3{
 .none{
     display: none;
 }
-.flex{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 8fr 1fr;
-}
-.welcome-page{
-    height: 100dvh;
+
+.bg-black{
     background-color: black;
-    color: antiquewhite;
-    font-size: 2rem;
+}
+.flex{
+    display: block;
+}
+.intro-text{
+    width: 36%;
+    min-width: 340px;
     text-align: center;
+    padding-top: 2rem;
 }
-.header{
-    grid-column: 1 /-1;
-    background-color: blue;
+.h-full{
+    height: 100dvh;
 }
-.meniu{
-    grid-column: 1 /3;
-    background-color: crimson;
-}
-.content{
-    grid-column: 3 / -1;
-    background-color: yellow;
-}
-.footer{
-    grid-column: 1 / -1;
-    background-color: aqua;
-}
+
