@@ -1,5 +1,4 @@
-// Function showing loding page for 5 sec
-// adding display none after 5 sec
+
 
 
 
@@ -27,3 +26,44 @@ function hideLoadingPage() {
   document.getElementById("loading-page").classList.add("none");
   document.getElementById("welcome-page").classList.toggle("flex");
 }
+
+
+
+
+
+// AI generated code 
+// const loadingSteps = [
+//   { text: "Please wait...", timeout: 1000 },
+//   { text: "Loading JavaScript Emulator", timeout: 3000, appendReady: true },
+// ];
+
+// function displayLoadingStep(step) {
+//   const para = document.createElement("p");
+//   para.appendChild(document.createTextNode(step.text));
+
+//   if (step.appendReady) {
+//     const loadNode = document.createTextNode("....ready");
+//     para.appendChild(loadNode);
+//   }
+
+//   document.getElementById("loading-page").appendChild(para);
+
+//   setTimeout(() => {
+//     if (step.appendReady) {
+//       hideLoadingPage();
+//     }
+//   }, step.timeout);
+// }
+
+// function hideLoadingPage() {
+//   document.getElementById("loading-page").classList.add("none");
+//   document.getElementById("welcome-page").classList.toggle("flex");
+// }
+
+// function startLoading() {
+//   loadingSteps.forEach((step, index) => {
+//     setTimeout(() => displayLoadingStep(step), index === 0 ? 0 : loadingSteps[index - 1].timeout);
+//   });
+// }
+
+// startLoading();
