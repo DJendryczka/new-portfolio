@@ -3,30 +3,44 @@
 /* Code for displaying
             loading page */
 
-const ShowLoading = setTimeout(displayLoadingPage, 1000);
+const ShowLoading = setTimeout(displayLoadingPage, 3000);
 function displayLoadingPage() {
   const para = document.createElement("p");
   const loadNode = document.createTextNode("please wait...");
   para.appendChild(loadNode);
   document.getElementById("loading-page").appendChild(para);
 }
-setTimeout(loadEmulator, 4000);
+setTimeout(loadEmulator, 5000);
 function loadEmulator() {
   const para = document.createElement("p");
   const loadNode = document.createTextNode("Loading JavaScript Emulator");
   para.appendChild(loadNode);
-  setTimeout(addtextnode, 3000)
+  setTimeout(addtextnode, 4000)
   function addtextnode(){
     const loadNode = document.createTextNode('....ready')
     para.appendChild(loadNode)
   }
   document.getElementById("loading-page").appendChild(para);
 }
-setTimeout(hideLoadingPage, 8000);
+setTimeout(hideLoadingPage, 10000);
 function hideLoadingPage() {
   document.getElementById("loading-page").classList.add("none");
   document.getElementById("welcome-page").classList.toggle("flex");
 }
+
+const loadingText = document.querySelector('.loading-text');
+
+function addDot() {
+  loadingText.textContent += '.';
+}
+
+// Add a dot every second
+const dotInterval = setInterval(addDot, 1000);
+
+// Stop adding dots after a certain duration (e.g., 10 seconds)
+setTimeout(() => {
+  clearInterval(dotInterval);
+}, 10000);
 
 
 /* Code for changing active 
