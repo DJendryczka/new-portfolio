@@ -49,19 +49,18 @@ function hideLoadingPage() {
   
             /* Code for changing active 
             link on Scrolling */
-            $(window).scroll(function () {
-                var distance = $(window).scrollTop();
-                $('.page-section').each(function (i) {
-  
-                    if ($(this).position().top 
-                        <= distance + 250) {
-                          
-                            $('.navbar-nav a.active')
-                                .removeClass('active');
-  
-                            $('.navbar-nav a').eq(i)
-                                .addClass('active');
+            $(document).ready(function () {
+                // Add the 'active' class to the home section link when the page loads
+                $('.navbar-nav a').eq(0).addClass('active');
+              
+                $(window).scroll(function () {
+                  var distance = $(window).scrollTop();
+                  $('.page-section').each(function (i) {
+                    if ($(this).position().top <= distance + 250) {
+                      $('.navbar-nav a.active').removeClass('active');
+                      $('.navbar-nav a').eq(i).addClass('active');
                     }
+                  });
                 });
-            }).scroll();
+              });
 
