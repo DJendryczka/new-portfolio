@@ -54,9 +54,6 @@ img{
     height: 100vh;
 }
 /* CSS for blinking dot */
-.blink-dot {
-    display: inline-block;
-  }
   
   @keyframes blink {
     0%, 100% {
@@ -67,7 +64,7 @@ img{
     }
   }
   
-  .blink {
+  .dot-blink {
     animation: blink 1s step-start infinite;
   }
 @media screen and (max-width: 870px) {
