@@ -53,9 +53,7 @@ img{
     height: 100vh;
 }
 /* CSS for blinking dot */
-/* .loading-dot {
-    display: inline-block;
-  }
+
   
   @keyframes blink {
     0%, 100% {
@@ -66,9 +64,9 @@ img{
     }
   }
   
-  .blink {
+  .dot-blink {
     animation: blink 1s step-start infinite;
-  } */
+  }
 @media screen and (max-width: 870px) {
     .start-screen h3{
         text-align: center;
