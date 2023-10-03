@@ -19,6 +19,7 @@ h1{
 img{
     display: block;
 }
+
 .my-image{
     width: 18%;
     height: auto;
@@ -53,7 +54,6 @@ img{
     height: 100vh;
 }
 /* CSS for blinking dot */
-
   
   @keyframes blink {
     0%, 100% {
